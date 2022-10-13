@@ -79,6 +79,7 @@ h2 {
     font-family: 'android';
     color: green;
     background-image: linear-gradient(90deg, rgba(98, 192, 98, 0.527), rgba(18, 158, 18, 0.123));
+    border-radius: 5px;
 }
 
 div#video {
