@@ -115,7 +115,7 @@
 
         <p>
             <label for="ifoto">Foto do Perfil</label>
-            <input type="file" name="foto" id="ifoto">  <!-- Não pode usar o metodo GET, é preciso usar o método POST-->
+            <input type="file" name="foto" id="ifoto">  <!-- Não pode usar o metodo GET, é preciso usar o método POST  -  porque o método GET tem um limite de 3.000 bites para envio de formulário.-->
         </p>
 
         <p>
@@ -125,7 +125,53 @@
 
     </form>
     
+    <h1>Exemplo de Formulário 7</h1>
+    <form action="cadastro.php" method="post">
 
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+
+                <option value=""selected> --- Escolha --- </option>
+                <optgroup label="Região Sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PE">Pernambuco</option>
+                </optgroup>
+
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administração</option>
+                <option>Despachante</option>
+                <option value="DEV">Desenvolvedor</option>
+
+
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua mensagem aqui...."></textarea>
+
+            <!-- Usar o método POST, porque o método GET tem um limite de 3.000 bites para envio de formulário.-->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
 
     
 </body>
