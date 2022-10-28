@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">
+            menu
+            </span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+
+    </header>
+
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quidem illum dolore fuga neque laborum accusantium quo aperiam, eius, aspernatur ipsum. Blanditiis ad voluptates, unde fugit sed repellat animi nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo qui expedita nisi porro vel? Laborum, autem animi? Corporis a suscipit similique ad odio amet. Voluptates similique veritatis fugiat nam fuga.</p>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat sequi inventore eveniet facilis nihil labore minus, delectus mollitia corrupti eum obcaecati vero tenetur pariatur neque cumque ipsa assumenda molestiae. Provident.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quaerat atque velit voluptate! Ab molestias ratione et laborum, voluptatum deserunt, ex, sapiente nemo aliquid itaque suscipit repellat iusto officiis. Doloribus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor necessitatibus iure, laborum, quasi quia distinctio magnam id velit explicabo harum fuga autem cupiditate repellendus veritatis, molestiae officia molestias consequuntur consequatur.</p>
+
+
+        </article>
+    </main>
+    
+    <script>
+        function clickMenu() {
+            if(itens.style.display == 'block') {
+               itens.style.display = 'none'
+            } else {
+               itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
